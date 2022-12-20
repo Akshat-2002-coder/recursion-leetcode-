@@ -37,11 +37,11 @@ void solvesudoko(vector<vector<char>> &vt)
 { solve(vt);
 }
 int main()
-{  vector<vector<char>> vt;
+{  vector<vector<char>> vt(9,vector<char>(9,'.'));
    for(auto it:vt)
       for(auto it1:it)
          cin>>it1;
-   solvesudoko(vt);
+   // solvesudoko(vt);
    for(auto it:vt)
    {  for(auto it1:it)
          cout<<it1<<' ';
